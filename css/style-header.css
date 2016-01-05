@@ -1,0 +1,35 @@
+/* Navigation Styles */
+ul.navigation {
+	margin: 0 auto;
+	width: 690px;
+}
+
+@media screen and (max-width: 689px) {
+	ul.navigation {
+		width: 230px;
+	}
+}
+
+ul.navigation a {
+	background-color: #412C84;
+	border-radius: 5px;
+    float: left;
+    line-height: 30px;
+	margin: 5px;
+    text-align: center;
+    width: 220px;
+}
+
+ul.navigation a.current {
+	background-color: #200772;
+}
+
+ul.navigation a:hover li {
+	background-color: #200772;
+	border-radius: 5px;
+}
+
+ul.navigation a, ul.navigation a:hover, ul.navigation a:visited {
+	color: #ffffff;
+	text-decoration: none;
+}

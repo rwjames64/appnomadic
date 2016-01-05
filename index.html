@@ -2,22 +2,27 @@
 layout: default
 ---
 
-<div class="home">
+{% for app in site.data.apps %}
 
-  <h1 class="page-heading">Posts</h1>
+<hr class="clear row" />
+	
+	<div class="four row center" style="margin-top: 25px;">
+		<div class="fluid one col">
+			<div style="margin-right: 5px;">
+				<img class="full" src="images/{{ app.image }}" alt="App Logo" />
+			</div>
+		</div>
+		<div class="fluid two col">
+			<div class="margined">
+				<h1>{{ app.name }}</h1>
+				<h2>
+					{{ app.description }}
+				</h2>
+			</div>
+		</div>
+		<div class="right">
+			<a href="{{ app.link }}" target="_blank"><img class="center" src="images/en_app_rgb_wo_60.png" alt="download from Google Play" /></a>
+		</div>
+	</div>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>
+{% endfor %}
