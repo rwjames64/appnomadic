@@ -9,17 +9,17 @@
             </div>
             <div class="col-xs-24 visible-xs" id="mobile_menu_list">
                 <ul>
-                    <li><a href="#home">Home</a></li>
+                    <li><a href="#AN_home">Home</a></li>
                     {% for app in site.data.apps %}
-                    <li><a href="#{{ app.id }}">{{ app.name }}</a></li>
+                    <li><a href="#AN_{{ app.id }}">{{ app.name }}</a></li>
                     {% endfor %}
                 </ul>
             </div>
             <div class="col-md-16 col-sm-18 hidden-xs" id="templatemo-nav-bar">
                 <ul class="nav navbar-right">
-                    <li><a href="#home">Home</a></li>
+                    <li><a href="#AN_slider">Home</a></li>
                     {% for app in site.data.apps %}
-                    <li><a href="#{{ app.id }}">{{ app.name }}</a></li>
+                    <li><a href="#AN_{{ app.id }}">{{ app.name }}</a></li>
                     {% endfor %}
                 </ul>
             </div>
