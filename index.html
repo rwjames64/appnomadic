@@ -19,8 +19,9 @@ layout: default
             </div>
             <div class="col-md-1"></div>	
             <div class="col-md-16">
-                <h2>{{ app.name }}</h2>
-                <p>{{ app.description }}</p>
+                {% capture app-content %}{% include {{app.content}} %}{% endcapture %}
+					 {{ app-content | markdownify }}
+                {{% include app.content }}
                 <a href="{{ app.link }}"><img class="play-badge" alt="Get it on Google Play" src="https://play.google.com/intl/en_us/badges/images/generic/en-play-badge.png" /></a>
         </div><!-- end of row -->
         <div class="clear"></div>

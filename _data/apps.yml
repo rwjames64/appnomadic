@@ -1,11 +1,11 @@
 - name: AppNomadic Flashcards
   id: flashcards
-  description: Create custom flashcards and decks. Study and test your knowledge. Excellent for learning new terms and vocabulary, or studying a foreign language.
+  content: apps/flashcards.md 
   image: mfclogo.png
   link: https://play.google.com/store/apps/details?id=com.appnomadic.mobileflashcards
 
 - name: Mobile Fuel Tracker
   id: fueltracker
-  description: Simple fuel tracker for quickly tracking your fuel efficiency in multiple formats (mpg, mpg-UK, L/km)
+  content: apps/fueltracker.md
   image: mftlogo.png
   link: https://play.google.com/store/apps/details?id=com.appnomadic.mobilefueltracker
