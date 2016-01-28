@@ -559,3 +559,9 @@ header #title {
         font-size: 20px;
     }
 }
+
+/* Play Icon */
+img.play-badge {
+	width: 185px;
+	float: right;
+}
